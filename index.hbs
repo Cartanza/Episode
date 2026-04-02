@@ -1,5 +1,4 @@
-{{!< default}}
-
+{{#*inline "body"}}
 <main class="gh-main">
     <section class="gh-archive gh-outer">
         <div class="gh-archive-inner gh-inner">
@@ -8,5 +7,7 @@
             </header>
         </div>
     </section>
-    {{> "components/list" layout="simple" count="all" showExcerpt=true showPublishedAt=true}}
+    {{> partials/components/list layout="simple" count="all" showExcerpt=true showPublishedAt=true}}
 </main>
+{{/inline}}
+{{> default}}

@@ -1,8 +1,9 @@
-{{!< default}}
-
+{{#*inline "body"}}
 <main class="gh-main">
-    {{#author}}
-        {{> "components/author-header"}}
-    {{/author}}
-    {{> "components/list" layout="simple" showExcerpt=true showPublishedAt=true hasPagination=true}}
+    {{#with author}}
+        {{> partials/components/author-header}}
+    {{/with}}
+    {{> partials/components/list layout="simple" showExcerpt=true showPublishedAt=true hasPagination=true}}
 </main>
+{{/inline}}
+{{> default}}

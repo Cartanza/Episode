@@ -1,8 +1,7 @@
-{{!< default}}
-
+{{#*inline "body"}}
 <main class="gh-main">
-    {{> "components/header" layout="wide" background="image" primary=@custom.primary_header secondary=@custom.secondary_header}}
-    {{> "podcast-services"}}
+    {{> partials/components/header layout="wide" background="image" primary=@root.custom.primary_header secondary=@root.custom.secondary_header}}
+    {{> partials/podcast-services}}
     <section class="gh-archive gh-outer">
         <div class="gh-archive-inner gh-inner">
             <header class="gh-archive-header">
@@ -10,7 +9,7 @@
             </header>
         </div>
     </section>
-    {{> "components/list" layout="simple" count="3" showExcerpt=true showPublishedAt=true}}
+    {{> partials/components/list layout="simple" count="3" showExcerpt=true showPublishedAt=true}}
     {{#match pagination.pages ">" 1}}
         <div class="gh-more gh-outer">
             <div class="gh-inner">
@@ -18,5 +17,7 @@
             </div>
         </div>
     {{/match}}
-    {{> "components/cta" title=@custom.email_signup_text}}
+    {{> partials/components/cta title=@root.custom.email_signup_text}}
 </main>
+{{/inline}}
+{{> default}}

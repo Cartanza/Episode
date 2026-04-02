@@ -1,21 +1,21 @@
 <div class="gh-podcast-service-list gh-outer">
-    {{#if @custom.apple_podcasts_link}}
-        <a href="{{@custom.apple_podcasts_link}}" target="_blank" rel="noopener noreferrer">
-            {{> "icons/apple"}}
+    {{#if @root.custom.apple_podcasts_link}}
+        <a href="{{@root.custom.apple_podcasts_link}}" target="_blank" rel="noopener noreferrer">
+            {{> partials/icons/apple}}
             <span>Listen on</span>
             <span>Apple Podcasts</span>
         </a>
     {{/if}}
-    {{#if @custom.spotify_link}}
-        <a href="{{@custom.spotify_link}}" target="_blank" rel="noopener noreferrer">
-            {{> "icons/spotify"}}
+    {{#if @root.custom.spotify_link}}
+        <a href="{{@root.custom.spotify_link}}" target="_blank" rel="noopener noreferrer">
+            {{> partials/icons/spotify}}
             <span>Listen on</span>
             <span>Spotify</span>
         </a>
     {{/if}}
-    {{#if @custom.youtube_music_link}}
-        <a href="{{@custom.youtube_music_link}}" target="_blank" rel="noopener noreferrer">
-            {{> "icons/youtube"}}
+    {{#if @root.custom.youtube_music_link}}
+        <a href="{{@root.custom.youtube_music_link}}" target="_blank" rel="noopener noreferrer">
+            {{> partials/icons/youtube}}
             <span>Listen on</span>
             <span>YouTube Music</span>
         </a>
